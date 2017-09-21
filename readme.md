@@ -129,28 +129,17 @@ Response
 }
 ```
 
-### Submitting an Agent
-
-Please include a zip file with your agent, source code, and a readme on how to compile/run your agent.
-
-All agents must provide a command line argument to change the endpoint they are pointing at.
-
-For example:
-```bash
->runmyagent.exe -endpoint http://my-planet-wars-game.com:1337
-```
-
 ### Getting Started Locally Running the Server
  
 First clone the repository locally using git ([GitHub for Windows](http://windows.github.com) is good)
 
 ```bash
-git clone https://github.com/eonarheim/planet-wars-competition.git`
+git clone https://github.com/aaron-lillywhite/planet-wars-competition.git`
 ```
 
-1. Open the solution in VS 2015 ([Community Edition](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx) is free)
-2. Ensure you have [.NET Framework 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=48130) installed
-3. Ensure you have at least [TypeScript 1.6.4 installed](http://typescriptlang.org)
+1. Open the solution in Visual Studio ([Community Edition](https://www.visualstudio.com/vs/) is free)
+2. Ensure you have [.NET Framework 4.6.1](https://www.microsoft.com/en-us/download/details.aspx?id=49981) installed
+3. Ensure you have at least [TypeScript 2.2 installed](http://typescriptlang.org)
 
 You may run the server locally by starting the "PlanetWars" web project in Visual Studio. Once you have a local server, you can point your agent at the local endpoint.
 
