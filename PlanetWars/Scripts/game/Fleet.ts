@@ -59,6 +59,7 @@
       this.rotation = this._v1.subtract(this._v2).toAngle();
       this._fleetLabel.rotation = -this.rotation;
 
-      this.moveBy(this._dest.x, this._dest.y, GameSession.getTurnDuration() * this._turns).asPromise().then(() => this.kill());
+      var timeOffset = 0.001;
+      this.moveBy(this._dest.x, this._dest.y, GameSession.getTurnDuration() * this._turns + timeOffset).asPromise().then(() => this.kill());
    }
 }
